@@ -1,0 +1,156 @@
+@font-face {
+  font-family: Marlboro;
+  src: url(fonts/Marlboro.ttf);
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: Marlboro;
+}
+
+.roof-wrap {
+	margin: auto;
+	width: 100vw;
+}
+.roof {
+    margin : 1px auto 0px;
+		width: 0vw;
+		border: 1px solid #000;
+		border-width: 120px 420px 130px;
+		border-color:  #f01414 #f01414 #fff;
+		animation: colorUp 10s ease alternate infinite;
+}
+
+.red {
+	width: 100%;
+}
+
+h1 {
+	width: 100%;
+	height: 280px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	font-size: 220px;
+	z-index: 10;
+	margin-top: -198px;
+	color: rgba(212, 219, 229, 0.4);
+	animation: headingMove 10s ease alternate infinite;
+	
+}
+
+#pm-logo {
+	position: relative;
+	top: 50%;
+	left: calc(50% - 75px);
+	width: 150px;
+}
+
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding-bottom: 10px;
+}
+
+.line {
+	margin: auto;
+	width : 840px;
+	height: 4px;
+	background-color: #f01414; 
+	animation: colorDown 10s ease alternate infinite;
+}
+
+
+@keyframes colorUp {
+	15% {
+		border-color: #f01414 #f01414 #fff;
+	}
+	20% {
+		border-color: #0ba277 #0ba277 #fff;
+	}
+	50% {
+		border-color: #0ba277 #0ba277 #fff;
+	}
+
+	55% {
+		border-color: #363739 #363739 #fff;
+	}
+
+	85% {
+		border-color: #363739 #363739 #fff;
+	}
+	90% {
+		border-color: #8a7429 #8a7429 #fff;
+	}
+	100% {
+		border-color: #8a7429 #8a7429 #fff;
+	}
+}
+
+@keyframes colorDown {
+	15% {
+		background-color: #f01414;
+	}
+	20% {
+		background-color: #0ba277;
+	}
+	50% {
+		background-color: #0ba277;
+	}
+
+	55% {
+		background-color: #363739;;
+	}
+
+	85% {
+		background-color: #363739;
+	}
+	90% {
+		background-color: #8a7429;
+	}
+	100% {
+		background-color: #8a7429;
+	}
+}
+
+@keyframes headingMove {
+	15% {
+		color: rgba(212, 219, 229, 0.4);
+		transform: translateY(0px);
+
+	}
+	20% {
+		color: rgb(0, 0, 0);
+		transform: translateY(545px);
+	}
+	50% {
+		color: rgb(0, 0, 0);
+		transform: translateY(545px);
+	}
+
+	55% {
+		color: #a09c90;
+		transform: translateY(545px);
+	}
+
+	85% {
+		color: #a09c90;
+		transform: translateY(545px);
+	}
+
+	90% {
+		color: rgb(0, 0, 0);
+		transform: translateY(545px);
+	}
+
+	100% {
+		color: rgb(0, 0, 0);
+		transform: translateY(545px);
+	}
+}
